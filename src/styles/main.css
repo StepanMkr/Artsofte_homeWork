@@ -83,7 +83,8 @@ p {
     font-weight: 400;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.55);
-
+    margin-bottom: 30px;
+    text-align: left;
 }
 
 ::placeholder {
@@ -99,6 +100,7 @@ p {
     font-weight: 500;
     line-height: 36px;
     color: #FFFFFFC7;
+    margin: 0;
 }
 
 .card-payment {
@@ -116,21 +118,35 @@ p {
     line-height: 24px;
     background: none; /* Убирает фон */
     border: none; /* Убирает рамку */
-    color: inherit; /* Устанавливает цвет текста как у родительского элемента */
     font: inherit; /* Убирает стили шрифта, чтобы использовать шрифт родителя */
     padding: 0; /* Убирает внутренние отступы */
     cursor: pointer; /* Изменяет курсор при наведении */
+    margin-right: 68px;
+    color: rgba(255, 255, 255, 0.55) /* Замените #ffffff на нужный вам цвет текста */
 }
 
+
 .load-more-button {
-    background-color: rgba(255, 255, 255, 1);
+    width: 184px;
+    height: 64px;
+    background: none; /* Убирает фон */
+    font: inherit; /* Убирает стили шрифта, чтобы использовать шрифт родителя */
+    padding: 0; /* Убирает внутренние отступы */
+    cursor: pointer; /* Изменяет курсор при наведении */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+
+    background-color: rgba(30, 37, 43, 1);
     border: 1px 1px 1px 1px;
     font-family: Poppins;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
     color: rgba(255, 110, 48, 1);
-    opacity: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-headline {
@@ -244,6 +260,94 @@ header {
 }
 
 .social-media-list {
-    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    width: 190px;
+    height: 58px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 111px;
 }
 
+.social-media-list-item {
+    padding: 12px;
+}
+
+.main-content {
+    width: 1224px;
+    /* height: ; */
+    margin: 200px 105px 200px 108px;
+}
+
+.main-headline {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 62.4px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.main-description {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+}
+
+.main-head {
+    margin-bottom: 90px;
+}
+
+.inner {
+    /* padding: 33px; */
+}
+
+.logo-and-description {
+    width: 350px;
+    height: 66px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.logo-and-description a {
+    margin-right: 30px;
+}
+
+
+.card-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like {
+    margin-right: 12px;
+}
+
+.tools-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 10px; /* Отступы между элементами */
+}
+
+.tools-list-item {
+    background-color: rgba(30, 37, 43, 1); /* Цвет фона для визуализации */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 20px; /* Внутренний отступ */
+    border-radius: 15px;
+    margin-bottom: 100px;
+    gap: 25px;
+
+    width: 392px;
+    height: 294px;
+}
+
+.name-and-payment {
+    text-align: left;
+}
