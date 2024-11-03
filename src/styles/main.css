@@ -15,6 +15,10 @@ p {
     margin: 0;
 }
 
+button, i {
+    cursor: pointer;
+}
+
 .title {
     font-size: 22px;
     font-weight: 600;
@@ -249,13 +253,16 @@ header {
 }
 
 .wrapper input {
-    width: 400px;
+    width: 300px;
     height: 60px;
     margin: 0;
     padding: 0;
     border: none;
     margin-left: 13px;
+    outline: none;
     background-color: rgba(40, 48, 54, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
 }
 
 .search-button {
@@ -267,6 +274,9 @@ header {
     width: 130px;
     height: 48px;
     border: none;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+
 }
 
 .social-media-list {
@@ -338,14 +348,33 @@ header {
     justify-content: space-between;
 }
 
-.like {
+/*like*/
+.like, .add {
+    border-radius: 8px;
+    width: 42px;
+    height: 42px;
     margin-right: 12px;
+    align-items: center;
 }
 
+.like img, .add img {
+    padding: 7px;
+}
+
+.like-and-add {
+    display: flex;
+}
+
+.like-and-add img {
+    cursor: pointer;
+}
+
+/*like end*/
 .tools-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 колонки */
     gap: 10px; /* Отступы между элементами */
+    margin-bottom: 100px;
 }
 
 .tools-list-item {
