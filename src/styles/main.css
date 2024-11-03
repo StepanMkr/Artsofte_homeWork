@@ -116,13 +116,13 @@ p {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    background: none; /* Убирает фон */
-    border: none; /* Убирает рамку */
-    font: inherit; /* Убирает стили шрифта, чтобы использовать шрифт родителя */
-    padding: 0; /* Убирает внутренние отступы */
-    cursor: pointer; /* Изменяет курсор при наведении */
-    margin-right: 68px;
-    color: rgba(255, 255, 255, 0.55) /* Замените #ffffff на нужный вам цвет текста */
+    border: none;
+    color: rgba(255, 255, 255, 0.55);
+    background-color: rgba(30, 37, 43, 1);
+    margin-right: 13px;
+    width: 106px;
+    height: 42px;
+    border-radius: 8px;
 }
 
 
@@ -155,13 +155,19 @@ p {
     font-weight: 500;
     line-height: 36px;
     color: rgba(255, 255, 255, 0.8);
-
+    text-align: center;
+    margin: 0;
+    margin-bottom: 55px;
+    margin-top: 55px;
+    padding-top: 55px;
 }
 
 header {
     height: 700px;
     width: 1440px;
     background-image: url('../img/background.png');
+    margin: 0 auto;
+    margin-bottom: 200px;
 }
 
 .header-navigation {
@@ -230,6 +236,10 @@ header {
     margin-top: 60px;
 }
 
+/* .hader-container {
+    margin: 0 auto;
+} */
+
 .wrapper {
     width: 468px;
     height: 48px;
@@ -278,7 +288,9 @@ header {
 .main-content {
     width: 1224px;
     /* height: ; */
-    margin: 200px 105px 200px 108px;
+    /* margin: 200px 105px 200px 108px; */
+    margin: 0 auto;
+    margin-bottom: 200px;
 }
 
 .main-headline {
@@ -306,7 +318,7 @@ header {
 }
 
 .inner {
-    /* padding: 33px; */
+    padding: 20px;
 }
 
 .logo-and-description {
@@ -339,15 +351,67 @@ header {
 .tools-list-item {
     background-color: rgba(30, 37, 43, 1); /* Цвет фона для визуализации */
     text-align: center; /* Выравнивание текста по центру */
-    padding: 20px; /* Внутренний отступ */
+    /* padding: 20px;  */
     border-radius: 15px;
     margin-bottom: 100px;
     gap: 25px;
-
     width: 392px;
     height: 294px;
+
+    /*наведение*/
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Плавный переход для подъема и цвета */
+    margin: 10px; /* Отступы для пространства между элементами */
 }
+
+.tools-list-item:hover .card-payment {
+    color: rgba(255, 165, 55, 1); /* Новый цвет текста при наведении */
+}
+
+.tools-list-item:hover .visit-button {
+    width: 106px;
+    height: 42px;
+    color: rgba(255, 255, 255, 1);
+
+    background-color: #FF6E30;
+}
+
+.tools-list-item:hover {
+    transform: translateY(-10px); /* Подъем на 10 пикселей при наведении */
+    background-color: rgba(40, 48, 54, 0.6); /* Цвет фона при наведении */
+    background-image: url('../img/card-mask-hover.png');
+}
+
+/*конец наведения*/
 
 .name-and-payment {
     text-align: left;
+}
+
+.footer-container {
+    width: 1224px;
+    height: 253px;
+    margin: 0 auto;
+    /* background-color: #FF6E30; */
+    border-radius: 25px;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255. 0.1);
+    background-color: rgba(44, 53, 61, 0.2);
+    /* border: 2px solid; */
+    margin-bottom: 48px;
+
+
+
+
+    background-image: url('../img/footer_mask.png');
+
+}
+
+.brands-list {
+    width: 1059px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }
