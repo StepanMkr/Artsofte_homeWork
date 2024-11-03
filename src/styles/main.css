@@ -349,15 +349,30 @@ header {
 }
 
 /*like*/
-.like, .add {
+.add {
     border-radius: 8px;
     width: 42px;
     height: 42px;
     margin-right: 12px;
     align-items: center;
 }
+/*like*/
 
-.like img, .add img {
+.like {
+    border-radius: 8px;
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+    align-items: center;
+    
+}
+
+.like {
+    padding: 7px;
+    fill: var(--text-color-white);
+}
+
+.add img {
     padding: 7px;
 }
 
