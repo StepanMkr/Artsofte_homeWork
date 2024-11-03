@@ -364,13 +364,21 @@ header {
     height: 42px;
     margin-right: 12px;
     align-items: center;
-    
+    padding: 7px;
 }
 
-.like {
-    padding: 7px;
-    fill: var(--text-color-white);
+.like-img {
+    cursor: pointer;
 }
+
+.like-img:hover {
+    fill: rgba(253, 59, 65, 1);
+}
+
+.liked {
+    fill: rgba(253, 59, 65, 1);
+}
+
 
 .add img {
     padding: 7px;
