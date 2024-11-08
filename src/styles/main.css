@@ -1,5 +1,10 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
     font-family:'Poppins';
     background-color: rgba(30, 37, 43, 1);
 }
@@ -7,19 +12,14 @@ body {
 a {
     color: inherit; 
     text-decoration: none; 
-    margin: 0;
     display: block;
-}
-
-p {
-    margin: 0;
 }
 
 button, i {
     cursor: pointer;
 }
 
-.title {
+.header-container__logo-and-title_title {
     font-size: 22px;
     font-weight: 600;
     line-height: 33px;
@@ -27,8 +27,7 @@ button, i {
 
 }
 
-.navigation-list-item {
-    font-family: Poppins;
+.header-container__main-navigation__navigation-list__item {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -36,22 +35,19 @@ button, i {
     margin-top: 6px;
 }
 
-.login-button {
-    font-family: Poppins;
+.header-container__navigation__autorization__login-button {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     color: #FFFFFFC7;
 }
 
-.sign-up-button {
-    font-family: Poppins;
+.header-container__navigation__autorization__sign-up-button {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     color: #FDF5FF;
     background-color: #FF6E30;
-    
     width: 118px;
     height: 48px;
     top: 26px;
@@ -60,29 +56,24 @@ button, i {
     border-radius: 8px 8px 8px 8px;
     opacity: 0px;
     border: 0;
-
 }
 
-.header-headline {
-    font-family: Poppins;
+.header-container__search__headline {
     font-size: 50px;
     font-weight: 500;
     line-height: 70px;
     color: #FFFFFFE5;
-    margin: 0;
     margin-bottom: 30px;
 }
 
 .dot {
-    font-family: Poppins;
     font-size: 50px;
     font-weight: 500;
     line-height: 70px;
     color: #FF6E30;
 }
 
-.headline-description, .card-description {
-    font-family: Poppins;
+.header-container__search__description, .card-description {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -92,23 +83,19 @@ button, i {
 }
 
 ::placeholder {
-    font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
 }
 
 .card-title {
-    font-family: Poppins;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
     color: #FFFFFFC7;
-    margin: 0;
 }
 
 .card-payment {
-    font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -116,7 +103,6 @@ button, i {
 }
 
 .visit-button {
-    font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -135,14 +121,12 @@ button, i {
     height: 64px;
     background: none; 
     font: inherit;
-    padding: 0; 
     cursor: pointer; 
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
 
     background-color: rgba(30, 37, 43, 1);
     border: 1px 1px 1px 1px;
-    font-family: Poppins;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -153,14 +137,12 @@ button, i {
     justify-content: center;
 }
 
-.footer-headline {
-    font-family: Poppins;
+.footer-container__headline {
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    margin: 0;
     margin-bottom: 55px;
     margin-top: 55px;
     padding-top: 55px;
@@ -174,14 +156,14 @@ header {
     margin-bottom: 200px;
 }
 
-.header-navigation {
+.header-container__navigation {
     width: 1224px;
     height: 48px;
     margin: 26px 105px 104px 111px;
     display: flex;
 }
 
-.logo-and-title {
+.header-container__logo-and-title {
     width: 140px;
     height: 48px;
     display: flex;
@@ -191,19 +173,17 @@ header {
     align-items: center;
 }
 
-.logo-and-title a {
+.header-container__logo-and-title a {
     display: flex;
     align-items: center;
 }
 
-.main-navigation {
+.header-container__main-navigation {
     width: 431px;
     align-items: center;
 }
 
-.navigation-list {
-    margin: 0;
-    padding: 0;
+.header-container__main-navigation__navigation-list {
     margin-right: 193px;
     width: 431px;
     height: 48px;
@@ -213,7 +193,7 @@ header {
     align-items: center;
 }
 
-.autorization {
+.header-container__navigation__autorization {
     margin-left: 193px;
     width: 203px;
     height: 48px;
@@ -222,14 +202,14 @@ header {
     justify-content: space-between;
 }
 
-.header-search {
+.header-container__search {
     width: 600px;
     height: 354px;
     margin-left: 111px;
     margin-bottom: 110px;
 }
 
-.input-container {
+.header-container__search__input {
     width: 498px;
     height: 64px;
     background-color: rgba(40, 48, 54, 1);
@@ -238,7 +218,7 @@ header {
     margin-top: 60px;
 }
 
-.wrapper {
+.header-container__search__input__wrapper {
     width: 468px;
     height: 48px;
     padding: 8px 11px 8px 18px;
@@ -246,11 +226,9 @@ header {
     align-items: center;
 }
 
-.wrapper input {
+.header-container__search__input__wrapper input {
     width: 300px;
     height: 60px;
-    margin: 0;
-    padding: 0;
     border: none;
     margin-left: 13px;
     outline: none;
@@ -259,9 +237,7 @@ header {
     font-size: 16px;
 }
 
-.search-button {
-    margin: 0;
-    padding: 0;
+.header-container__search__input__search-button {
     margin-left: auto;
     background: rgba(255, 110, 48, 1);
     border-radius: 8px;
@@ -270,13 +246,9 @@ header {
     border: none;
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
-
 }
 
-.social-media-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.header-container__social-media__list {
     display: flex;
     width: 190px;
     height: 58px;
@@ -285,7 +257,7 @@ header {
     margin-left: 111px;
 }
 
-.social-media-list-item {
+.header-container__social-media__list__item {
     padding: 12px;
 }
 
@@ -296,18 +268,15 @@ header {
 }
 
 .main-headline {
-    font-family: Poppins;
     font-size: 48px;
     font-weight: 500;
     line-height: 62.4px;
     color: rgba(255, 255, 255, 0.9);
-    margin: 0;
     margin-bottom: 25px;
     text-align: center;
 }
 
 .main-description {
-    font-family: Poppins;
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
@@ -429,14 +398,10 @@ header {
     background-color: rgba(44, 53, 61, 0.2);
     margin-bottom: 48px;
     background-image: url('../img/footer_mask.png');
-
 }
 
-.brands-list {
+.footer-container__brands-list {
     width: 1059px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
