@@ -73,7 +73,7 @@ button, i {
     color: #FF6E30;
 }
 
-.header-container__search__description, .card-description {
+.header-container__search__description, .main-content__tools-list__item__inner__card-description {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -88,21 +88,21 @@ button, i {
     line-height: 21px;
 }
 
-.card-title {
+.main-content__tools-list__item__inner__logo-and-description__name-and-payment__card-title {
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
     color: #FFFFFFC7;
 }
 
-.card-payment {
+.main-content__tools-list__item__inner__logo-and-description__name-and-payment__card-payment {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     color: #FFA5378C;
 }
 
-.visit-button {
+.main-content__tools-list__item__inner__card-options__visit-button {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -267,7 +267,7 @@ header {
     margin-bottom: 200px;
 }
 
-.main-headline {
+.main-content__head__headline {
     font-size: 48px;
     font-weight: 500;
     line-height: 62.4px;
@@ -276,7 +276,7 @@ header {
     text-align: center;
 }
 
-.main-description {
+.main-content__head__description {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
@@ -284,32 +284,32 @@ header {
     text-align: center;
 }
 
-.main-head {
+.main-content__head {
     margin-bottom: 90px;
 }
 
-.inner {
+.main-content__tools-list__item__inner {
     padding: 20px;
 }
 
-.logo-and-description {
+.main-content__tools-list__item__inner__logo-and-description {
     width: 350px;
     height: 66px;
     margin-bottom: 30px;
     display: flex;
 }
 
-.logo-and-description a {
+.main-content__tools-list__item__inner__logo-and-description a {
     margin-right: 30px;
 }
 
 
-.card-options {
+.main-content__tools-list__item__inner__card-options {
     display: flex;
     justify-content: space-between;
 }
 
-.add {
+.main-content__tools-list__item__inner__card-options__like-and-add__add {
     border-radius: 8px;
     width: 42px;
     height: 42px;
@@ -317,7 +317,7 @@ header {
     align-items: center;
 }
 
-.like {
+.main-content__tools-list__item__inner__card-options__like-and-add__like {
     border-radius: 8px;
     width: 42px;
     height: 42px;
@@ -326,35 +326,31 @@ header {
     padding: 7px;
 }
 
-.like-img {
+.main-content__tools-list__item__inner__card-options__like-and-add__like__img {
     cursor: pointer;
 }
 
-.like-img:hover, .liked {
+.main-content__tools-list__item__inner__card-options__like-and-add__like__img:hover, .liked {
     fill: rgba(253, 59, 65, 1);
 }
 
 
-.add img {
+.main-content__tools-list__item__inner__card-options__like-and-add__add img {
     padding: 7px;
 }
 
-.like-and-add {
+.main-content__tools-list__item__inner__card-options__like-and-add {
     display: flex;
 }
 
-.like-and-add img {
-    cursor: pointer;
-}
-
-.tools-list {
+.main-content__tools-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 10px; 
     margin-bottom: 100px;
 }
 
-.tools-list-item {
+.main-content__tools-list__item {
     background-color: rgba(30, 37, 43, 1); 
     text-align: center;
     border-radius: 15px;
@@ -367,24 +363,24 @@ header {
     margin: 10px; 
 }
 
-.tools-list-item:hover .card-payment {
+.main-content__tools-list__item:hover .main-content__tools-list__item__inner__logo-and-description__name-and-payment__card-payment {
     color: rgba(255, 165, 55, 1); 
 }
 
-.tools-list-item:hover .visit-button {
+.main-content__tools-list__item:hover .main-content__tools-list__item__inner__card-options__visit-button {
     width: 106px;
     height: 42px;
     color: rgba(255, 255, 255, 1);
     background-color: #FF6E30;
 }
 
-.tools-list-item:hover {
+.main-content__tools-list__item:hover {
     transform: translateY(-10px); 
     background-color: rgba(40, 48, 54, 0.6); 
     background-image: url('../img/card-mask-hover.png');
 }
 
-.name-and-payment {
+.main-content__tools-list__item__inner__logo-and-description__name-and-payment {
     text-align: left;
 }
 
